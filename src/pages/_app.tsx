@@ -5,7 +5,6 @@ import cx from "classnames";
 import { store } from "../redux/store";
 import { Provider } from "react-redux";
 import { Toaster } from "react-hot-toast";
-import { SessionProvider } from "next-auth/react";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -14,15 +13,16 @@ const poppins = Poppins({
   display: "swap",
 });
 
-export default function App({ Component, pageProps: { session, ...pageProps } }: AppProps) {
+export default function App({
+  Component,
+  pageProps: { session, ...pageProps },
+}: AppProps) {
   return (
-    <SessionProvider session={session}>
-      <Provider store={store}>
-        <main className={cx(poppins.variable)}>
-          <Toaster />
-          <Component {...pageProps} />;
-        </main>
-      </Provider>
-    </SessionProvider>
+    <Provider store={store}>
+      <main className={cx(poppins.variable)}>
+        <Toaster />
+        <Component {...pageProps} />;
+      </main>
+    </Provider>
   );
 }
