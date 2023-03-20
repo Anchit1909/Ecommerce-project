@@ -9,7 +9,7 @@ import { SessionProvider } from "next-auth/react";
 
 const poppins = Poppins({
   variable: "--font-poppins",
-  weight: ["400", "600", "700"],
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
   display: "swap",
 });
@@ -23,7 +23,7 @@ export default function App({
       <Provider store={store}>
         <main className={cx(poppins.variable)}>
           <Toaster />
-          <Component {...pageProps} />;
+          <Component {...pageProps} />
         </main>
       </Provider>
     </SessionProvider>

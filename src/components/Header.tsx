@@ -21,16 +21,19 @@ function Header() {
       <div className="flex items-center justify-center md:w-1/5">
         <Link href="/">
           <div className="relative h-10 w-5 cursor-pointer opacity-75 transition hover:opacity-100">
-            <Image
+            {/* <Image
               src="/apple_logo.webp"
               fill
               style={{ objectFit: "contain" }}
               alt="Header Image"
-            />
+            /> */}
+            <h1 className="text-black text-3xl font-poppins font-semibold">
+              Aurius
+            </h1>
           </div>
         </Link>
       </div>
-      <div className="hidden flex-1 items-center justify-center space-x-8 md:flex">
+      <div className="hidden flex-1 items-center justify-center space-x-8 md:flex font-poppins">
         <a className="cursor-pointer opacity-75 transition hover:opacity-100">
           Product
         </a>

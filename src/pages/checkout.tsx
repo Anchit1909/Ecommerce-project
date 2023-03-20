@@ -47,7 +47,6 @@ function checkout() {
       return;
     }
     // Redirect to checkout
-    // Redirect to Checkout.
     const stripe = await getStripe();
     const { error } = await stripe!.redirectToCheckout({
       // Make the id field from the Checkout Session creation API response
@@ -66,7 +65,7 @@ function checkout() {
   return (
     <div className="min-h-screen overflow-hidden bg-[#E7ECEE]">
       <Head>
-        <title>Bag - Apple</title>
+        <title>Bag - Aurius</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />

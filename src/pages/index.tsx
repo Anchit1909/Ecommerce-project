@@ -10,6 +10,7 @@ import Product from "@/components/Product";
 import Basket from "@/components/Basket";
 import { getSession } from "next-auth/react";
 import type { Session } from "next-auth";
+import Second from "@/components/Second";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -40,12 +41,12 @@ export default function Home({ categories, products }: Props) {
       </main>
       <section className="relative z-40 -mt-[100vh] min-h-screen bg-[#1B1B1B]">
         <div className="space-y-10 py-16">
-          <h1 className="text-center text-4xl font-medium tracking-wide text-white md:text-5xl">
-            New Promos
+          <h1 className="text-center text-4xl tracking-wide text-white md:text-5xl font-poppins font-medium">
+            New Products
           </h1>
 
           <Tab.Group>
-            <Tab.List className="flex justify-center">
+            <Tab.List className="flex justify-center font-poppins">
               {categories.map((category) => (
                 <Tab
                   key={category._id}
@@ -71,6 +72,7 @@ export default function Home({ categories, products }: Props) {
           </Tab.Group>
         </div>
       </section>
+      <Second />
     </>
   );
 }
