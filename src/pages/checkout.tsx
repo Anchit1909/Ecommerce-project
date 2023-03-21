@@ -13,6 +13,7 @@ import CheckoutProduct from "@/components/CheckoutProduct";
 import { fetchPostJSON } from "@/utils/api-helpers";
 // import { Stripe } from "@stripe/stripe-js";
 import getStripe from "../utils/get-stripejs";
+import Footer from "@/components/Footer";
 
 function checkout() {
   const items = useSelector(selectBasketItems);
@@ -69,7 +70,7 @@ function checkout() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main className="mx-auto max-w-screen-lg py-12 font-poppins">
+      <main className="mx-auto max-w-screen-lg pt-12 pb-4 font-poppins">
         <div className="px-5">
           <h1 className="mt-8 text-3xl font-semibold lg:text-4xl">
             {items.length > 0 ? "Review your bag." : "Your bag is empty."}
@@ -165,6 +166,7 @@ function checkout() {
           </div>
         )}
       </main>
+      <Footer />
     </div>
   );
 }
