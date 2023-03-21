@@ -10,7 +10,8 @@ import Product from "@/components/Product";
 import Basket from "@/components/Basket";
 import { getSession } from "next-auth/react";
 import type { Session } from "next-auth";
-import Second from "@/components/Second";
+import PromoProducts from "@/components/PromoProducts";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -72,7 +73,8 @@ export default function Home({ categories, products }: Props) {
           </Tab.Group>
         </div>
       </section>
-      <Second />
+      <PromoProducts />
+      <Footer />
     </>
   );
 }
