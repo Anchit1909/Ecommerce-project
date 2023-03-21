@@ -69,12 +69,12 @@ function checkout() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main className="mx-auto max-w-5xl pb-24">
+      <main className="mx-auto max-w-screen-lg py-12 font-poppins">
         <div className="px-5">
-          <h1 className="my-4 text-3xl font-semibold lg:text-4xl">
+          <h1 className="mt-8 text-3xl font-semibold lg:text-4xl">
             {items.length > 0 ? "Review your bag." : "Your bag is empty."}
           </h1>
-          <p className="my-4">Free delivery and free returns.</p>
+          <p className="mb-16">Free delivery and free returns.</p>
 
           {items.length === 0 && (
             <Button

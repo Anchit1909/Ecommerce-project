@@ -47,10 +47,10 @@ function Success({ products }: Props) {
   return (
     <div>
       <Head>
-        <title>Thank you! - Apple</title>
+        <title>Thank you! - Aurius</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <header className="mx-auto max-w-xl">
+      <header className="mx-auto max-w-xl font-poppins">
         <Link href="/">
           <div className="relative ml-4 h-16 w-8 cursor-pointer transition lg:hidden">
             <Image
@@ -63,19 +63,8 @@ function Success({ products }: Props) {
         </Link>
       </header>
 
-      <main className="grid grid-cols-1 lg:grid-cols-9">
-        <section className="order-2 mx-auto max-w-xl pb-12 lg:col-span-5 lg:mx-0 lg:max-w-none lg:pr-16 lg:pt-16 xl:pl-16 2xl:pl-44">
-          <Link href="/">
-            <div className="relative ml-14 hidden h-24 w-12 cursor-pointer transition lg:inline-flex">
-              <Image
-                src="/apple_logo.webp"
-                fill
-                style={{ objectFit: "contain" }}
-                alt="Header Image"
-              />
-            </div>
-          </Link>
-
+      <main className="grid grid-cols-1 lg:grid-cols-9 font-poppins">
+        <section className="order-2 mx-auto max-w-screen-xl pb-12 lg:col-span-5 lg:mx-0 lg:max-w-none lg:pr-16 lg:pt-16 xl:pl-16 2xl:pl-44">
           <div className="my-8 ml-4 flex space-x-4 lg:ml-14 xl:ml-0">
             <div className="flex h-11 w-11 items-center justify-center rounded-full border-2 border-black">
               <CheckIcon className="h-8 w-8" />
@@ -114,7 +103,7 @@ function Success({ products }: Props) {
               You’ll get shipping and delivery updates by email and text.
             </p>
           </div>
-          <div className="mx-4 flex flex-col items-center justify-between text-sm lg:ml-14 lg:flex-row">
+          <div className="mt-8 mx-4 flex flex-col items-center justify-between text-sm lg:ml-14 lg:flex-row">
             <p className="hidden lg:inline">Need help? Contact us</p>
             {mounted && (
               <Button
@@ -155,7 +144,7 @@ function Success({ products }: Props) {
             </div>
 
             {showOrderSummaryCondition && (
-              <div className="mx-auto max-w-xl divide-y border-gray-300 px-4 py-4 lg:mx-0 lg:max-w-lg lg:px-10 lg:py-16">
+              <div className="mx-auto max-w-xl divide-y border-gray-300 px-4 py-4 lg:mx-0 lg:max-w-lg lg:px-10 lg:py-24">
                 <div className="space-y-4 pb-4">
                   {products.map((product) => (
                     <div
@@ -165,7 +154,7 @@ function Success({ products }: Props) {
                       <div className="relative flex h-16 w-16 items-center justify-center rounded-md border border-gray-300 bg-[#F1F1F1] text-xs text-white">
                         <div className="relative h-7 w-7 animate-bounce rounded-md">
                           <Image
-                            src="/apple_logo.webp"
+                            src="/shopping-bag.svg"
                             fill
                             style={{ objectFit: "contain" }}
                             alt="Header Image"
@@ -189,7 +178,7 @@ function Success({ products }: Props) {
                   <div className="flex justify-between text-sm">
                     <p className="text-[gray]">Subtotal</p>
                     <p className="font-medium">
-                      <Currency quantity={subtotal} />
+                      <Currency quantity={subtotal} currency="INR" />
                     </p>
                   </div>
                   <div className="flex justify-between text-sm">
@@ -199,16 +188,16 @@ function Success({ products }: Props) {
                   <div className="flex justify-between text-sm">
                     <p className="text-[gray]">Shipping</p>
                     <p className="font-medium">
-                      <Currency quantity={20} currency="USD" />
+                      <Currency quantity={20} currency="INR" />
                     </p>
                   </div>
                 </div>
                 <div className="flex justify-between pt-4">
                   <p>Total</p>
                   <p className="flex items-center gap-x-2 text-xs text-[gray]">
-                    USD
+                    INR
                     <span className="text-xl font-medium text-black">
-                      <Currency quantity={subtotal + 20} />
+                      <Currency quantity={subtotal + 20} currency="INR" />
                     </span>
                   </p>
                 </div>
