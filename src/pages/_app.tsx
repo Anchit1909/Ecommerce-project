@@ -6,6 +6,10 @@ import { store } from "../redux/store";
 import { Provider } from "react-redux";
 import { Toaster } from "react-hot-toast";
 import { SessionProvider } from "next-auth/react";
+import { PersistGate } from "redux-persist/integration/react";
+import { persistStore } from "redux-persist";
+
+let persister = persistStore(store);
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -21,10 +25,12 @@ export default function App({
   return (
     <SessionProvider session={session}>
       <Provider store={store}>
-        <main className={cx(poppins.variable)}>
-          <Toaster />
-          <Component {...pageProps} />
-        </main>
+        <PersistGate persistor={persister}>
+          <main className={cx(poppins.variable)}>
+            <Toaster />
+            <Component {...pageProps} />
+          </main>
+        </PersistGate>
       </Provider>
     </SessionProvider>
   );
