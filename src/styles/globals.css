@@ -2,9 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 @layer base {
   body {
-    @apply font-poppins text-[#232428] bg-[#E7ECEE];
+    @apply font-poppins text-[#232428] bg-[#E7ECEE] overflow-x-hidden;
   }
 }
 

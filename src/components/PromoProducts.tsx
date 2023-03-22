@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Button from "./Button";
+import Image from "next/image";
 
 function PromoProducts() {
   return (
@@ -11,8 +12,16 @@ function PromoProducts() {
         {/* Left */}
         <div className="md:order-none order-1 relative flex items-center justify-center">
           <div className="absolute h-52 w-[432px] bg-gradient-to-r from-pink-100 to-violet-100 blur-xl"></div>
-          <div className="z-10">
+          {/* <div className="z-10 w-80 md:w-96">
             <img src="/imac.png" alt="" />
+          </div> */}
+          <div className="relative h-80 w-80 md:h-96 md:w-96">
+            <Image
+              src="/imac.png"
+              fill
+              style={{ objectFit: "contain" }}
+              alt="Product Image"
+            />
           </div>
         </div>
         {/* Right */}
@@ -38,10 +47,10 @@ function PromoProducts() {
             </div>
           </div>
         </div>
-        {/* Project 2 */}
+        {/* Product 2 */}
 
         {/* Right */}
-        <div className="max-w-md md:order-none order-2 -mt-24 md:mt-0">
+        <div className="max-w-md md:order-none order-4 -mt-24 md:mt-0">
           <span className="uppercase px-4 py-2 text-xs font-bold font-poppins bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent shadow-md">
             We Offer
           </span>
@@ -64,22 +73,38 @@ function PromoProducts() {
           </div>
         </div>
         {/* Left */}
-        <div className="md:order-none order-1 relative flex items-center justify-center">
+        <div className="md:order-none order-3 relative flex items-center justify-center">
           <div className="absolute h-52 w-[432px] bg-gradient-to-r from-pink-100 to-violet-100 blur-xl"></div>
-          <div className="z-10">
+          {/* <div className="z-10">
             <img src="/ipad.png" alt="" className="h-[400px]" />
+          </div> */}
+          <div className="relative h-80 w-80 md:h-96 md:w-96">
+            <Image
+              src="/ipad.png"
+              fill
+              style={{ objectFit: "contain" }}
+              alt="Product Image"
+            />
           </div>
         </div>
-        {/* Project 3 */}
+        {/* Product 3 */}
         {/* Left */}
-        <div className="md:order-none order-1 relative flex items-center justify-center">
+        <div className="md:order-none order-5 relative flex items-center justify-center">
           <div className="absolute h-52 w-[432px] bg-gradient-to-r from-pink-100 to-violet-100 blur-xl"></div>
-          <div className="z-10">
+          {/* <div className="z-10">
             <img src="/iphone1.png" alt="" className="h-[500px]" />
+          </div> */}
+          <div className="relative h-80 w-80 md:h-96 md:w-96">
+            <Image
+              src="/iphone1.png"
+              fill
+              style={{ objectFit: "contain" }}
+              alt="Product Image"
+            />
           </div>
         </div>
         {/* Right */}
-        <div className="max-w-md md:order-none order-2 -mt-24 md:mt-0">
+        <div className="max-w-md md:order-none order-6 -mt-24 md:mt-0">
           <span className="uppercase px-4 py-2 text-xs font-bold font-poppins bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent shadow-md">
             We Offer
           </span>

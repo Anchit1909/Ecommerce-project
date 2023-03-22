@@ -4,9 +4,9 @@ import Button from "./Button";
 
 function Landing() {
   return (
-    <section className="sticky top-0 mx-auto flex h-screen max-w-screen-xl items-center justify-center md:justify-between px-8 md:flex-row flex-col-reverse">
+    <section className="sticky top-0 mx-auto flex h-screen max-w-screen-xl items-center justify-center sm:justify-between px-8 sm:flex-row flex-col-reverse">
       <div className="space-y-6">
-        <h1 className="space-y-2 text-4xl font-semibold tracking-wide lg:text-5xl xl:text-6xl font-poppins md:text-left text-center mt-6">
+        <h1 className="space-y-2 text-4xl font-semibold tracking-wide lg:text-5xl xl:text-6xl font-poppins sm:text-left text-center mt-6">
           <span className="block bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent">
             Powered
           </span>
@@ -20,7 +20,7 @@ function Landing() {
         </div>
       </div>
 
-      <div className="relative h-[280px] w-[280px] transition-all duration-500 md:inline lg:h-[550px] lg:w-[500px]">
+      <div className="relative h-[280px] w-[280px] transition-all duration-500 sm:inline lg:h-[550px] lg:w-[500px]">
         <Image
           src="/iphone.png"
           fill

@@ -23,7 +23,7 @@ function CheckoutProduct({ id, items }: Props) {
   };
 
   return (
-    <div className="flex flex-col gap-x-4 border-b border-gray-300 pb-5 lg:flex-row lg:items-center">
+    <div className="flex flex-col gap-x-4 border-b border-gray-300 pb-5 md:flex-row md:items-center">
       <div className="relative h-44 w-44">
         <Image
           src={urlFor(items[0].image[0]).url()}
@@ -33,9 +33,9 @@ function CheckoutProduct({ id, items }: Props) {
         />
       </div>
 
-      <div className="flex flex-1 items-end lg:items-center">
+      <div className="flex flex-1 items-end md:items-center">
         <div className="flex-1 space-y-4">
-          <div className="flex flex-col gap-x-8 text-xl lg:flex-row lg:text-2xl">
+          <div className="flex flex-col gap-x-8 text-xl md:flex-row md:text-2xl">
             <h4 className="font-semibold lg:w-96">{items[0].title}</h4>
             <p className="flex items-end gap-x-1 font-semibold">
               {items.length}

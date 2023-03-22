@@ -32,17 +32,17 @@ function Header() {
       </div>
       <div className="hidden flex-1 items-center justify-center space-x-8 md:flex font-poppins">
         <a className="cursor-pointer opacity-75 transition hover:opacity-100">
-          Product
+          Products
         </a>
         <a className="cursor-pointer opacity-75 transition hover:opacity-100">
           Explore
         </a>
-        <a className="cursor-pointer opacity-75 transition hover:opacity-100">
+        {/* <a className="cursor-pointer opacity-75 transition hover:opacity-100">
           Support
         </a>
         <a className="cursor-pointer opacity-75 transition hover:opacity-100">
           Business
-        </a>
+        </a> */}
       </div>
       <div className="flex items-center justify-center gap-x-4 md:w-1/5">
         {/* <MagnifyingGlassIcon className="h-6 w-6 cursor-pointer opacity-75 transition hover:opacity-100" /> */}

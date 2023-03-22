@@ -52,7 +52,7 @@ function Success({ products }: Props) {
       </Head>
       <header className="mx-auto max-w-xl font-poppins">
         <Link href="/">
-          <div className="relative ml-4 h-16 w-8 cursor-pointer transition lg:hidden">
+          <div className="relative hidden ml-4 h-16 w-8 cursor-pointer transition lg:hidden">
             <Image
               src="/apple_logo.webp"
               fill
@@ -138,7 +138,7 @@ function Success({ products }: Props) {
                 </button>
 
                 <p className="text-xl font-medium text-black">
-                  <Currency quantity={subtotal + 20} />
+                  <Currency quantity={subtotal + 20} currency="INR" />
                 </p>
               </div>
             </div>
