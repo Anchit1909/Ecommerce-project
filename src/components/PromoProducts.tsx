@@ -27,7 +27,7 @@ function PromoProducts() {
         {/* Right */}
         <div className="max-w-md md:order-none order-2 -mt-24 md:mt-0">
           <span className="uppercase px-4 py-2 text-xs font-bold font-poppins bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent shadow-md">
-            We Offer
+            iMac" 24
           </span>
           <h2 className="max-w-lg text-2xl font-semibold text-left text-black font-poppins lg:text-4xl lg:text-left mt-5 mb-4">
             Awesome in any space. Perfectly Blend in your life.
@@ -52,18 +52,19 @@ function PromoProducts() {
         {/* Right */}
         <div className="max-w-md md:order-none order-4 -mt-24 md:mt-0">
           <span className="uppercase px-4 py-2 text-xs font-bold font-poppins bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent shadow-md">
-            We Offer
+            ipad
           </span>
           <h2 className="max-w-lg text-2xl font-semibold text-left text-black font-poppins lg:text-4xl lg:text-left mt-5 mb-4">
-            Awesome in any space. Perfectly Blend in your life.
+            Unleash Your Creativity Anywhere with the Powerful iPad!
           </h2>
           <p
             className="font-poppins text-base tracking-wide text-[#64646B] mb-4
       "
           >
-            Designed to take full advantage of next-level performance and
-            special technologies such as the advanced image signal processor and
-            integrated memory architecture.
+            The iPad is a powerful and versatile device that lets you unleash
+            your creativity wherever you go. With its stunning Retina display,
+            fast performance, and intuitive touch controls, you can sketch,
+            write, edit, and create with ease.
           </p>
           <div className="flex items-center justify-start w-full space-x-4 mt-6">
             <div className="space-x-8 font-poppins">
@@ -106,18 +107,19 @@ function PromoProducts() {
         {/* Right */}
         <div className="max-w-md md:order-none order-6 -mt-24 md:mt-0">
           <span className="uppercase px-4 py-2 text-xs font-bold font-poppins bg-gradient-to-r from-pink-500 to-violet-500 bg-clip-text text-transparent shadow-md">
-            We Offer
+            iPhone
           </span>
           <h2 className="max-w-lg text-2xl font-semibold text-left text-black font-poppins lg:text-4xl lg:text-left mt-5 mb-4">
-            Awesome in any space. Perfectly Blend in your life.
+            Experience the Future Today with the Revolutionary iPhone!
           </h2>
           <p
             className="font-poppins text-base tracking-wide text-[#64646B] mb-4
       "
           >
-            Designed to take full advantage of next-level performance and
-            special technologies such as the advanced image signal processor and
-            integrated memory architecture.
+            The iPhone is more than just a phone, it's a game-changing device
+            that has revolutionized the way we communicate, work, and play. With
+            its sleek design and cutting-edge technology, the iPhone is the
+            ultimate tool for staying connected and organized on the go.
           </p>
           <div className="flex items-center justify-start w-full space-x-4 mt-6">
             <div className="space-x-8 font-poppins">
