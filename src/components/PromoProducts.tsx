@@ -5,7 +5,7 @@ import Image from "next/image";
 
 function PromoProducts() {
   return (
-    <section className=" py-20 bg-[#E7ECEE]" id="projects">
+    <section className=" py-20 bg-[#E7ECEE]" id="explore">
       {/* Products */}
       <div className="max-w-screen-xl py-0 px-8 my-0 mx-auto grid grid-rows-2 md:grid-cols-2 items-center gap-x-24 gap-y-36 ">
         {/* Product 1 */}

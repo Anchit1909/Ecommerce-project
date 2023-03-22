@@ -12,6 +12,7 @@ import { getSession } from "next-auth/react";
 import type { Session } from "next-auth";
 import PromoProducts from "@/components/PromoProducts";
 import Footer from "@/components/Footer";
+import useScroll from "@/lib/hooks/use-scroll";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ interface Props {
 }
 
 export default function Home({ categories, products }: Props) {
+  const scrolled = useScroll(20);
   const showProducts = (category: number) => {
     return products
       .filter((product) => product.category._ref === categories[category]._id)
@@ -40,7 +42,10 @@ export default function Home({ categories, products }: Props) {
       <main className="relative h-[200vh] bg-[#E7ECEE]">
         <Landing />
       </main>
-      <section className="relative z-40 -mt-[100vh] min-h-screen bg-[#1B1B1B]">
+      <section
+        id="products"
+        className="relative z-40 -mt-[100vh] min-h-screen bg-[#1B1B1B]"
+      >
         <div className="space-y-10 py-16">
           <h1 className="text-center text-4xl tracking-wide text-white md:text-5xl font-poppins font-medium">
             New Products

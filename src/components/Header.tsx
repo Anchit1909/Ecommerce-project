@@ -10,9 +10,11 @@ import {
 import { useSelector } from "react-redux";
 import { selectBasketItems } from "@/redux/basketSlice";
 import { useSession, signIn, signOut } from "next-auth/react";
+import useScroll from "@/lib/hooks/use-scroll";
 
 function Header() {
   // const session = false;
+  const scrolled = useScroll(20);
   const { data: session } = useSession();
   const item = useSelector(selectBasketItems);
 
@@ -31,12 +33,20 @@ function Header() {
         </div>
       </div>
       <div className="hidden flex-1 items-center justify-center space-x-8 md:flex font-poppins">
-        <a className="cursor-pointer opacity-75 transition hover:opacity-100">
+        <Link
+          className="cursor-pointer opacity-75 transition hover:opacity-100"
+          href="/#products"
+          scroll={false}
+        >
           Products
-        </a>
-        <a className="cursor-pointer opacity-75 transition hover:opacity-100">
+        </Link>
+        <Link
+          className="cursor-pointer opacity-75 transition hover:opacity-100"
+          href="/#explore"
+          scroll={false}
+        >
           Explore
-        </a>
+        </Link>
         {/* <a className="cursor-pointer opacity-75 transition hover:opacity-100">
           Support
         </a>

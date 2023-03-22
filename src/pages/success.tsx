@@ -15,6 +15,7 @@ import { useMediaQuery } from "react-responsive";
 import Button from "../components/Button";
 import { fetchLineItems } from "../utils/fetchLineItems";
 import { useSession } from "next-auth/react";
+import Header from "@/components/Header";
 
 interface Props {
   products: StripeProduct[];
@@ -62,7 +63,6 @@ function Success({ products }: Props) {
           </div>
         </Link>
       </header>
-
       <main className="grid grid-cols-1 lg:grid-cols-9 font-poppins">
         <section className="order-2 mx-auto max-w-screen-xl pb-12 lg:col-span-5 lg:mx-0 lg:max-w-none lg:pr-16 lg:pt-16 xl:pl-16 2xl:pl-44">
           <div className="my-8 ml-4 flex space-x-4 lg:ml-14 xl:ml-0">
