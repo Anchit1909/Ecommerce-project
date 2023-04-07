@@ -3,7 +3,6 @@ import Header from "../components/Header";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import Currency from "react-currency-formatter";
 import { useSelector } from "react-redux";
 import Stripe from "stripe";
 import Button from "../components/Button";
@@ -96,9 +95,7 @@ function checkout() {
                 <div className="pb-4">
                   <div className="flex justify-between">
                     <p>Subtotal</p>
-                    <p>
-                      <Currency quantity={basketTotal} currency="INR" />
-                    </p>
+                    <p>₹ {basketTotal}</p>
                   </div>
                   <div className="flex justify-between">
                     <p>Shipping</p>
@@ -118,9 +115,7 @@ function checkout() {
 
                 <div className="flex justify-between pt-4 text-xl font-semibold">
                   <h4>Total</h4>
-                  <h4>
-                    <Currency quantity={basketTotal} currency="INR" />
-                  </h4>
+                  <h4>₹ {basketTotal}</h4>
                 </div>
               </div>
 
@@ -147,9 +142,7 @@ function checkout() {
                   <div className="flex flex-1 flex-col items-center space-y-8 rounded-xl bg-gray-200 p-8 py-12 md:order-2">
                     <h4 className="mb-4 flex flex-col text-xl font-semibold">
                       Pay in full
-                      <span>
-                        <Currency quantity={basketTotal} currency="INR" />
-                      </span>
+                      <span>₹ {basketTotal}</span>
                     </h4>
 
                     <Button
