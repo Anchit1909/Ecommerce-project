@@ -40,6 +40,7 @@ Aurius is an ecommerce application for electronic devices using which shop owner
 - [Typescript](https://www.typescriptlang.org/)
 - [NextJS](https://nextjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
+- [NextAuth](https://next-auth.js.org/)
 - [Sanity](https://www.sanity.io/) (Headless CMS)
 - [Stripe](https://stripe.com/) (For processing payments)
 
