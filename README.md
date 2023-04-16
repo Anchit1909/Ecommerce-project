@@ -11,7 +11,7 @@
   <a href="https://twitter.com/anchit1909" target="_blank">
     <img src="https://img.shields.io/twitter/follow/anchit1909?style=flat&label=anchit1909&logo=twitter&color=0bf&logoColor=fff" alt="Anchit Sinha Twitter follower count" />
   </a>
-  <a href="https://github.com/Anchit1909/BackToLife-Old-Image-Regeneration" target="_blank">
+  <a href="https://github.com/Anchit1909/aurius-ecommerce-website" target="_blank">
     <img src="https://img.shields.io/github/stars/Anchit1909/aurius-ecommerce-website?label=Anchit1909%2FBackToLife" alt="BackToLife repo star count" />
   </a>
 </p>
@@ -41,7 +41,7 @@ Aurius is an ecommerce application for electronic devices using which shop owner
 - [NextJS](https://nextjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Sanity](https://www.sanity.io/) (Headless CMS)
-- [Stripe] (https://stripe.com/) (For processing payments)
+- [Stripe](https://stripe.com/) (For processing payments)
 
 ## Running Locally
 
@@ -74,7 +74,7 @@ Then, run the application in the command line and it will be available at `http:
 npm run dev
 ```
 
-### To manage Sanity.
+### To manage Sanity headless CMS.
 
 Go to **sanity_backend** folder and then run the following command.
 
