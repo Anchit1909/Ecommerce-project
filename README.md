@@ -8,10 +8,10 @@
 </p>
 
 <p align="center">
-  <a href="https://twitter.com/anchit1909">
+  <a href="https://twitter.com/anchit1909" target="_blank">
     <img src="https://img.shields.io/twitter/follow/anchit1909?style=flat&label=anchit1909&logo=twitter&color=0bf&logoColor=fff" alt="Anchit Sinha Twitter follower count" />
   </a>
-  <a href="https://github.com/Anchit1909/BackToLife-Old-Image-Regeneration">
+  <a href="https://github.com/Anchit1909/BackToLife-Old-Image-Regeneration" target="_blank">
     <img src="https://img.shields.io/github/stars/Anchit1909/aurius-ecommerce-website?label=Anchit1909%2FBackToLife" alt="BackToLife repo star count" />
   </a>
 </p>
